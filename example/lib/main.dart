@@ -170,7 +170,7 @@ class _CustomSearchScaffoldState extends PlacesAutocompleteState {
   Widget build(BuildContext context) {
     final appBar = AppBar(title: const AppBarPlacesAutoCompleteTextField());
     final body = PlacesAutocompleteResult(
-      onTap: (p) {
+      onTap: (Prediction? p) {
         displayPrediction(p, context);
       },
       logo: Row(
